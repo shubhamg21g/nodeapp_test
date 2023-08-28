@@ -23,7 +23,6 @@ jobs:
         uses: docker/metadata-action@v4
         with:
           images: shubhamg21g/myrepo
-          tags: latest
       
       - name: Build and push Docker image
         uses: docker/build-push-action@v4
