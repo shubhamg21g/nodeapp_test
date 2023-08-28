@@ -22,9 +22,7 @@ jobs:
         id: meta2
         uses: docker/metadata-action@v4
         with:
-          images: |
-            shubhamg21g/myrepo
-            ghcr.io/${{ github.repository }}
+          images: shubhamg21g/myrepo
           tags: latest
       
       - name: Build and push Docker image
