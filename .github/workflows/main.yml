@@ -22,7 +22,7 @@ jobs:
         id: meta
         uses: docker/metadata-action@v4
         with:
-          images: shubhamg21g/myrepo
+          images: shubhamg21g/shivay-img
       
       - name: Build and push Docker image
         uses: docker/build-push-action@v4
