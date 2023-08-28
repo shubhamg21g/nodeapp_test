@@ -19,7 +19,7 @@ jobs:
           password: ${{ secrets.DOCKER_PASSWORD }}
           
       - name: Extract metadata (tags, labels) for Docker
-        id: meta2
+        id: meta
         uses: docker/metadata-action@v4
         with:
           images: shubhamg21g/shivayimage
@@ -28,6 +28,5 @@ jobs:
         uses: docker/build-push-action@v4
         with:
           context: .
-          push: true
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
