@@ -23,7 +23,7 @@ jobs:
         uses: docker/metadata-action@v4
         with:
           images: |
-            fgygh/fglanguage
+            shubhamg21g/myrepo
             ghcr.io/${{ github.repository }}
           tags: latest
       
