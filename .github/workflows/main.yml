@@ -23,9 +23,7 @@ jobs:
         uses: docker/metadata-action@v4
         with:
           images: shubhamg21g/shivayimg
-          tags:
-           - user/image:latest
-      
+          
       - name: Build and push Docker image
         uses: docker/build-push-action@v4
         with:
