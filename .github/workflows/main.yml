@@ -31,8 +31,6 @@ jobs:
           push: True
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
-
-jobs:
   deploy:
     name: deploy docker image to server
     runs-on: ubuntu-latest
